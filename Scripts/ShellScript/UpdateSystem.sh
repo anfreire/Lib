@@ -10,21 +10,21 @@ function update_system () {
 	flatpak update
 	if [ $package == $APT ]; then
 		sudo apt install -f -y
-		sudo apt update -y
-		sudo apt upgrade -y
-		sudo apt full-upgrade -y
-		sudo apt dist-upgrade -y
-		sudo apt autoclean -y
-		sudo apt clean -y
-		sudo apt autoremove -y
+		sudo apt update 
+		sudo apt upgrade 
+		sudo apt full-upgrade 
+		sudo apt dist-upgrade 
+		sudo apt autoclean 
+		sudo apt clean 
+		sudo apt autoremove 
 	elif [ $package == $APTITUDE ]; then
 		sudo aptitude install -f -y
-		sudo aptitude update -y
-		sudo aptitude upgrade -y
-		sudo aptitude full-upgrade -y
-		sudo aptitude dist-upgrade -y
-		sudo aptitude autoclean -y
-		sudo aptitude clean -y
+		sudo aptitude update 
+		sudo aptitude upgrade 
+		sudo aptitude full-upgrade 
+		sudo aptitude dist-upgrade 
+		sudo aptitude autoclean 
+		sudo aptitude clean 
 	fi
 }
 
